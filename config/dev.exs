@@ -3,8 +3,8 @@ config :ash, policies: [show_policy_breakdowns?: true]
 
 # Configure your database
 config :paperwork, Paperwork.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "developer",
+  password: "elixirdeveloper",
   hostname: "localhost",
   database: "paperwork_dev",
   stacktrace: true,

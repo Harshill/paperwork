@@ -66,7 +66,7 @@ config :spark,
 config :paperwork,
   ecto_repos: [Paperwork.Repo],
   generators: [timestamp_type: :utc_datetime],
-  ash_domains: [Paperwork.Accounts]
+  ash_domains: [Paperwork.Inventory, Paperwork.AssetForms, Paperwork.Accounts]
 
 # Configures the endpoint
 config :paperwork, PaperworkWeb.Endpoint,
