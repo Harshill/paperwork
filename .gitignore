@@ -59,23 +59,18 @@ log/
 *.sqlite3-shm
 *.sqlite3-wal
 
-# Ash Framework Specific
-# Note: Resource snapshots should be COMMITTED (not ignored)
-# They are stored in priv/resource_snapshots/ and track resource changes
-# priv/resource_snapshots/ - DO NOT IGNORE
-
-# AshPostgres migration files should be committed
-# priv/repo/migrations/ - DO NOT IGNORE
-
-# Spark generated files (if any temporary ones exist)
-# Generally, Spark/Ash DSL extensions don't create temp files to ignore
-
 # Generated documentation
 doc/
 
 # NPM (if using Phoenix with assets)
+# In case you use Node.js/npm, you want to ignore these.
+npm-debug.log
 /assets/node_modules/
+
 /priv/static/assets/
 
 # Phoenix specific (if using Phoenix with Ash)
 /priv/static/cache_manifest.json
+
+# Ignore package tarball (built via "mix hex.build").
+paperwork-*.tar
