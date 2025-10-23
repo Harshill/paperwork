@@ -1,10 +1,76 @@
-/_build
-/cover
-/deps
-/doc
+# Elixir Build Artifacts
+/_build/
+/cover/
+/deps/
+/doc/
 /.fetch
 erl_crash.dump
 *.ez
 *.beam
+*.o
+
+# Elixir Releases
+/rel/
+
+# Mix
+/.mix/
+mix.lock.conflict
+
+# Dialyzer
+/dialyzer/
+/*.plt
+/*.plt.hash
+
+# Secrets and Environment
 /config/*.secret.exs
+.env
+.env.*
+!.env.example
+
+# Development Tools
 .elixir_ls/
+.lexical/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Test Coverage
+/cover/
+coveralls.json
+
+# Temporary Files
+*.tmp
+.ash_*
+tmp/
+temp/
+
+# Logs
+*.log
+log/
+
+# Database Files
+*.db
+*.db-shm
+*.db-wal
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+
+# Generated documentation
+doc/
+
+# NPM (if using Phoenix with assets)
+# In case you use Node.js/npm, you want to ignore these.
+npm-debug.log
+/assets/node_modules/
+
+/priv/static/assets/
+
+# Phoenix specific (if using Phoenix with Ash)
+/priv/static/cache_manifest.json
+
+# Ignore package tarball (built via "mix hex.build").
+paperwork-*.tar
